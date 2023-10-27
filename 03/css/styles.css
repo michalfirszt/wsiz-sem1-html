@@ -33,4 +33,5 @@
 
 #parent-element {
     display: flex;
+    flex-direction: row-reverse;
 }
