@@ -26,3 +26,11 @@
 .padding-20 {
     padding: 20px;
 }
+
+.width-25 {
+    width: 25%;
+}
+
+#parent-element {
+    display: flex;
+}
