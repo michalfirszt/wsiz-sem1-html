@@ -1,0 +1,28 @@
+#element1 {
+    color: white;
+    /* background-color: yellow; */
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.bg-green {
+    background-color: green;
+}
+
+.margin-20 {
+    margin: 20px;
+}
+
+.padding-20 {
+    padding: 20px;
+}
