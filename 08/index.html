@@ -15,8 +15,10 @@
         <li>Another list item</li>
     </ul>
 
-    <ol>
-
+    <ol id="another-list">
+        <li>First list item</li>
+        <li>Another list item</li>
+        <li>Third list item</li>
     </ol>
 
     <div class="container">
@@ -54,6 +56,17 @@
         // 1. create 'ol' static list element inside html
         // 2. create 3 static 'li' elements inside 'ol' element
         // 3. add 2 dinamic 'li' elements inside 'ol' element
+        const olList = document.getElementById('another-list');
+
+        const newListItems = ['New dinamic element', 'Another dinamic element', 'New value'];
+
+        newListItems.forEach((newElement) => {
+            const newListItem = document.createElement('li');
+            const newListItemContent = document.createTextNode(newElement)
+
+            newListItem.appendChild(newListItemContent)
+            olList.appendChild(newListItem)
+        })
     </script>
 </body>
 </html>
