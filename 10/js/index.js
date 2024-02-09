@@ -1,3 +1,8 @@
+const today = new Date();
+const currentYear = today.getFullYear();
+
+console.log(currentYear);
+
 const clickMeButton = document.getElementById('click-me-button');
 const ulList = document.getElementById('list');
 
