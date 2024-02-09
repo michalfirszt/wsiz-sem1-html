@@ -1,3 +1,4 @@
+// #1
 const eventStartInput = document.getElementById('start-input');
 const eventEndInput = document.getElementById('end-input');
 
@@ -15,3 +16,25 @@ submitButton.addEventListener('click', () => {
         eventEndInput.setAttribute('class', 'form-control');
     }
 })
+
+// #2
+const form = document.getElementById('custom-form');
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const inputIds = ['name-input', 'email-input', 'content-input'];
+
+    inputIds.forEach((inputId) => {
+        const input = document.getElementById(inputId);
+        const inputErrorMessage = document.getElementById(`${inputId}-error`);
+
+        console.log(inputErrorMessage);
+
+        if (input.getAttribute('required') !== null && input.value === '') {
+            input.setAttribute('class', 'form-control border border-danger');
+        } else {
+            input.setAttribute('class', 'form-control');
+        }
+    })
+});
